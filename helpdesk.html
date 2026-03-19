@@ -10,13 +10,12 @@
     <meta name = "author" content = "Tom Hollday">
 </head>
 <body>
-    <img src = "images/logo.png"
-        alt = "Swinburne University Logo"
-        title = "Swinburne University Logo"
-        loading = "lazy"
-        href="https://www.swin.edu.au"
+    <a href="https://www.swin.edu.au">
+            <img src = "images/logo.png"
+            alt = "Swinburne University Logo"
+            loading = "lazy">
         target="_blank"
-        title="Swinburne Website">
+        title="Swinburne Website"</a>
     <h1>
         <strong>CWA Help Desk Appointment</strong>
     </h1>
@@ -26,23 +25,23 @@
         Check Blackboard for when CWA tutors will be there.
     </p>
     <section>
-        <h3>
+        <h2>
             Student Details
-        </h3>
+        </h2>
         <fieldset>
-            <input type = "text" id = "student_id" name="student_id" value = "student_id">
+            <input type = "text" id = "student_id" name="student_id" required = "required" pattern ="[A-Za-z\d]{7,10}">
             <label for="student_id">Student ID</label>
             <br>
-            <input type = "text" id = "first_name" name = "student_first_name" value = "first_name">
+            <input type = "text" id = "first_name" name = "student_first_name" value = "first_name" pattern ="^(?=.*[A-Za-z])[A-Za-z]{,15}">
             <label for="first_name">Given Name</label>
-            <input type = "text" id = "last_name" name = "student_family_name" value = "last_name">
+            <input type = "text" id = "last_name" name = "student_family_name" value = "last_name" pattern ="^(?=.*[A-Za-z])[A-Za-z]{,15}">
             <label for="last_name">Family Name</label>
         </fieldset>
     </section>
     <section>
-        <h3>
+        <h2>
             Your Unit
-        </h3>
+        </h2>
         <fieldset>
             
         </fieldset>
