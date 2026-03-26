@@ -10,7 +10,7 @@
         <meta name = "author" content = "Tom Hollday">
     </head>
     <body>
-        <form>
+        <form action="submit.php" method="post">
             <a href="https://www.swin.edu.au">
                     <img src = "images/logo.png"
                     alt = "Swinburne University Logo"
@@ -29,7 +29,7 @@
                     Student Details
                 </legend>
                 <label for="student_id">Student ID</label>
-                <input type = "text" id = "student_id" name="student_id" required = "required" pattern ="[A-Za-z\d]{7,10}">
+                <input type = "text" id = "student_id" name="student_id" required = "required" pattern ="[\d]{7,10}">
                 <br>
                 <label for="first_name">Given Name</label>
                 <input type = "text" id = "first_name" name = "student_first_name" pattern ="^(?=.*[A-Za-z])[A-Za-z]{,15}">
